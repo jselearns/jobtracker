@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applicant Tracker</title>
+    <link rel="stylesheet" href="applicant.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">Tracker | Job Applicant</div>
+        <div class="user-info">
+            Welcome! <strong></strong>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="menu-button nav-link active" data-target="available-jobs">List of Jobs Available</button>
+            <button class="menu-button nav-link" data-target="job-applications">My Job Applications</button>
+        </div>
+
+        <div class="content">
+            <div id="available-jobs" class="content-section active">
+                <!-- Example Job Cards -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-title">Job Title: </div>
+                        <div class="job-position">Job Position: </div>
+                        <div class="job-posted">Job Posted: </div>
+                    </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Job Application</h2>
+            <form id="editForm">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+
+                <label for="jobPosition">Job Position:</label>
+                <input type="text" id="jobPosition" name="jobPosition" required>
+
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" name="jobDescription" required></textarea>
+
+                <label for="jobAddress">Job Address:</label>
+                <input type="text" id="jobAddress" name="jobAddress" required>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> --> 
+</body>
+</html>
