@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Manager</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tracker | Job Provider</h1>
+            <div class="admin-welcome">
+                <span>Welcome! ADMIN</span>
+                <img src="icon.jpg" alt="Admin Icon" class="admin-icon">
+            </div>
+        </header>
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-target="job-table-section">Job</a></li>
+                    <li><a href="#" class="nav-link" data-target="job-applicants-section">Job Applicants</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <!-- Manage Job Section -->
+            <section id="job-table-section" class="content-section active">
+                <div class="manage-job">
+                    <h2>Manage Job</h2>
+                    <button class="add-job-btn">+ Add Job</button>
+                </div>
+                <table class="job-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Job Title</th>
+                            <th>Job Position</th>
+                            <th>Job Description</th>
+                            <th>Job Address</th>
+                            <th>Job Posted</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Marketing Manager</td>
+                            <td>Managerial</td>
+                            <td>Lead Marketing Campaigns</td>
+                            <td>789 Main St</td>
+                            <td>2024-06-13</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sales Executive</td>
+                            <td>Executive</td>
+                            <td>Manage Sales Team</td>
+                            <td>101 Main St</td>
+                            <td>2024-06-13</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Programming</td>
+                            <td>Junior Programmer</td>
+                            <td>Programmer</td>
+                            <td>China</td>
+                            <td>2024-06-19</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Job Applicants Section -->
+            <section id="job-applicants-section" class="content-section">
+                <div class="manage-job">
+                    <h2>My Job Applications</h2>
+                </div>
+                <table class="job-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Job Title</th>
+                            <th>Job Position</th>
+                            <th>Job Description</th>
+                            <th>Job Address</th>
+                            <th>Job Posted</th>
+                            <th>Job Apply Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Marketing Manager</td>
+                            <td>Managerial</td>
+                            <td>Lead Marketing Campaigns</td>
+                            <td>789 Main St</td>
+                            <td>2024-06-13</td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sales Executive</td>
+                            <td>Executive</td>
+                            <td>Manage Sales Team</td>
+                            <td>101 Main St</td>
+                            <td>2024-06-13</td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Programming</td>
+                            <td>Junior Programmer</td>
+                            <td>Programmer</td>
+                            <td>China</td>
+                            <td>2024-06-19</td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <!-- <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Job</h2>
+            <form id="editForm">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required><br>
+
+                <label for="jobPosition">Job Position:</label>
+                <input type="text" id="jobPosition" name="jobPosition" required><br>
+
+                <label for="jobDescription">Job Description:</label>
+                <input type="text" id="jobDescription" name="jobDescription" required><br>
+
+                <label for="jobAddress">Job Address:</label>
+                <input type="text" id="jobAddress" name="jobAddress" required><br>
+
+                <label for="jobPosted">Job Posted Date:</label>
+                <input type="date" id="jobPosted" name="jobPosted" required><br>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div> -->
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
